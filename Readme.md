@@ -37,6 +37,7 @@ List gemsets
 Create a gemset for this project
 
     $ rvm --rvmrc --create {ruby-version}@{project-name}
+    $ rvm --rvmrc --create 1.9.2@appa  # for example
 
 
 #### Yipyip!
