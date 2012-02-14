@@ -15,4 +15,27 @@ If not, make this project a git repo.
     $ git init
 
 
+## Rvm
+
+Is RVM installed?
+
+    $ type rvm | head -1  # should output "rvm is a function"
+    $ rvm --version
+
+If not, see installation instructions at <http://beginrescueend.com>.
+
+Check to see what Ruby versions have been installed and what versions are available.
+
+    $ rvm list
+    $ rvm list known
+
+List gemsets
+
+    $ rvm gemset list
+
+Create a gemset for this project
+
+    $ rvm --rvmrc --create {ruby-version}@{project-name}
+
+
 #### Yipyip!
