@@ -1,5 +1,6 @@
 Appa
 ====
+Get your project off the ground.
 
     $ cd my_project
 
