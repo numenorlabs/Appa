@@ -39,5 +39,12 @@ Create a gemset for this project
     $ rvm --rvmrc --create {ruby-version}@{project-name}
     $ rvm --rvmrc --create 1.9.2@appa  # for example
 
+## Bundler
+
+Bundle is best installed in the global gemset.
+
+    $ rvm gemset use global
+    $ gem install bundler
+
 
 #### Yipyip!
