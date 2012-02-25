@@ -41,7 +41,7 @@ Create a gemset for this project
 
 ## Bundler
 
-Bundle is best installed in the global gemset.
+Bundler is best installed in the global gemset.
 
     $ rvm gemset use global
     $ gem install bundler
