@@ -46,5 +46,8 @@ Bundler is best installed in the global gemset.
     $ rvm gemset use global
     $ gem install bundler
 
+Create the Gemfile
+
+    $ bundler init
 
 #### Yipyip!
