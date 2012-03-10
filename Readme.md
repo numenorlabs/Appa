@@ -11,9 +11,10 @@ Is this project a git repository?
 
     $ git status
 
-If not, make this project a git repo.
+If not, make this project a git repo with an empty root commit.
 
     $ git init
+    $ git commit --allow-empty -m 'root commit'
 
 
 ## Rvm
