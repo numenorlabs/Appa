@@ -49,6 +49,6 @@ Bundler is best installed in the global gemset.
 
 Create the Gemfile
 
-    $ bundler init
+    $ bundle init
 
 #### Yipyip!
