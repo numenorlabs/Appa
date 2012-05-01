@@ -16,6 +16,8 @@ If not, make this project a git repo with an empty root commit.
     $ git init
     $ git commit --allow-empty -m 'root commit'
 
+Copy the gitignore file from this repo to .gitignore into your project.  Edit as neccessary.
+
 
 ## Rvm
 
@@ -40,6 +42,7 @@ Create a gemset for this project
     $ rvm --rvmrc --create {ruby-version}@{project-name}
     $ rvm --rvmrc --create 1.9.2@appa  # for example
 
+
 ## Bundler
 
 Bundler is best installed in the global gemset.
@@ -50,5 +53,6 @@ Bundler is best installed in the global gemset.
 Create the Gemfile
 
     $ bundle init
+
 
 #### Yipyip!

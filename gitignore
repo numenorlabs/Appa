@@ -6,6 +6,11 @@
 # OS X
 .DS_Store
 
+# XCode
+build/
+*.pbxuser
+*.mode1v3
+
 # Idea
 .idea/workspace.xml
 .idea/tasks.xml
