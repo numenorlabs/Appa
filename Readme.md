@@ -55,4 +55,21 @@ Create the Gemfile
     $ bundle init
 
 
+## Rake
+
+Use Rake to manage scripts related to your project.
+
+Copy the Rakefile from this repo into your project.
+
+Rake will execute the default task when invoked without an argument.  One frequent candidate for the default task is to
+run the test suite.  Another option is to list out available tasks, as shown below.
+
+*in Rakefile*
+
+    task :default do
+      Rake.application.options.show_task_pattern = //
+      Rake.application.display_tasks_and_comments()
+    end
+
+
 #### Yipyip!
