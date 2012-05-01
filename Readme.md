@@ -7,6 +7,8 @@ Get your project off the ground.
 
 ## Git
 
+Use git to version your project source code (and other assets) and manage your coding workflow.
+
 Is this project a git repository?
 
     $ git status
@@ -20,6 +22,8 @@ Copy the gitignore file from this repo to .gitignore into your project.  Edit as
 
 
 ## Rvm
+
+Use RVM to manage Ruby and gems on a per project basis.
 
 Is RVM installed?
 
@@ -44,6 +48,8 @@ Create a gemset for this project
 
 
 ## Bundler
+
+Use Bundler to manage gems, gem versions and gem dependencies.
 
 Bundler is best installed in the global gemset.
 
