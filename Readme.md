@@ -78,4 +78,28 @@ run the test suite.  Another option is to list out available tasks, as shown bel
     end
 
 
+## PostgreSQL
+
+Use PostgreSQL for all of your database needs.
+
+Download and install PostgreSQL from the website: http://www.postgresql.org/download/macosx/ .
+
+Add the Postgres binaries to your shell path by placing the postgres bin path in /etc/paths.d/postgres:
+
+*in /etc/paths.d/postgres*
+
+    /Library/PostgreSQL/9.1/bin
+
+To allow local clients to connect to the database, change authentication for local connections from 'md5' to 'trust':
+
+*in /Library/PostgreSQL/9.1/data/pg_hba.conf*
+
+    # "local" is for Unix domain socket connections only
+    local   all         all                               trust
+    # IPv4 local connections:
+    host    all         all         127.0.0.1/32          trust
+    # IPv6 local connections:</code>
+    host    all         all         ::1/128               trust
+
+
 #### Yipyip!
