@@ -73,6 +73,7 @@ run the test suite.  Another option is to list out available tasks, as shown bel
 *in Rakefile*
 
     task :default do
+      Rake.application.options.show_tasks = :tasks
       Rake.application.options.show_task_pattern = //
       Rake.application.display_tasks_and_comments()
     end
