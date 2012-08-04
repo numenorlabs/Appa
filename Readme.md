@@ -16,9 +16,33 @@ Is this project a git repository?
 If not, make this project a git repo with an empty root commit.
 
     $ git init
-    $ git commit --allow-empty -m 'root commit'
+    $ git commit --allow-empty -m 'Root commit'
 
-Copy the gitignore file from this repo to .gitignore into your project.  Edit as neccessary.
+If your environment creates a template project with an already initialized git repo, you can prepend an empty
+root commit like this:
+
+    $ git checkout --orphan new_root
+    $ git rm -rf .
+    $ git commit --allow-empty -m 'Root commit'
+    $ git checkout master
+    $ git rebase new_root
+    $ git branch -d new_root
+
+You can tell git to ignore files at three levels.
+
+To tell git to ignore certain files in all projects, copy the gitignore_global file from this repo to
+~/.gitignore_global.  Edit as necessary.  Then tell git to use it.
+
+    $git config --global core.excludesfile ~/.gitignore_global
+
+To ignore files at the project level, copy the gitignore file from this repo to .gitignore into your project.
+Edit as necessary.
+
+You can also specify local per-project excludes in .git/info/exclude.
+
+See also: https://help.github.com/articles/ignoring-files
+
+My favorite git tutorial: http://www-cs-students.stanford.edu/~blynn/gitmagic/
 
 
 ## Rvm

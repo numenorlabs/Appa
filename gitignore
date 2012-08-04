@@ -1,11 +1,3 @@
-# Emacs
-*~
-\#*#
-.#*
-
-# OS X
-.DS_Store
-
 # XCode
 build/
 *.pbxuser
