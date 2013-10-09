@@ -42,6 +42,23 @@ def workstation(action)
     end
   end
 
+  # Dropbox
+
+  # Flux
+
+  unless File.exists? '/Applications/Screen Sharing.app'
+    if action == 'install'
+      operations << lambda {
+        puts 'Installing Screen Sharing application.'
+        system_or_exit "ln -s '/System/Library/CoreServices/Screen Sharing.app' /Applications/"
+      }
+    else
+      operations << lambda {
+        puts 'Screen Sharing application not found.'
+      }
+    end
+  end
+
   if operations.count > 0
       operations.each do |operation|
         operation.call
