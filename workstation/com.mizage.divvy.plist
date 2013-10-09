@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
+	<key>SULastCheckTime</key>
+	<date>2013-09-30T02:07:41Z</date>
+	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>enableAcceleration</key>
+	<true/>
+	<key>globalHotkey</key>
+	<dict>
+		<key>keyCode</key>
+		<integer>46</integer>
+		<key>modifiers</key>
+		<integer>6400</integer>
+	</dict>
+	<key>shortcuts</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUIU1RUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLR
+	BgdUcm9vdIABrAkKEyssMjs8RkdOT1UkbnVsbNILDA0SWk5TLm9iamVjdHNWJGNsYXNz
+	pA4PEBGAAoAFgAeACYAL3RQVFhcYGRobHB0eHwwgISIjISQlJicmKSUqXxASc2VsZWN0
+	aW9uRW5kQ29sdW1uXxARc2VsZWN0aW9uU3RhcnRSb3dda2V5Q29tYm9GbGFnc1xrZXlD
+	b21ib0NvZGVfEBRzZWxlY3Rpb25TdGFydENvbHVtbldlbmFibGVkW3NpemVDb2x1bW5z
+	WnN1YmRpdmlkZWRXbmFtZUtleVZnbG9iYWxfEA9zZWxlY3Rpb25FbmRSb3dYc2l6ZVJv
+	d3MQAhAAEgCAAAAQewkQBgiAAwgQBYAEVExlZnTSLS4vMFgkY2xhc3Nlc1okY2xhc3Nu
+	YW1lojAxWFNob3J0Y3V0WE5TT2JqZWN03RQVFhcYGRobHB0eHwwpITM0NSQlJjgmKSUq
+	EgCAAAAQfBADCQiABgiABFVSaWdodN0UFRYXGBkaGxwdHh8MPSEhPj8kJSRCJkQlKhAK
+	EAgQAQkJgAgIEAuABFZDZW50ZXLdFBUWFxgZGhscHR4fDCkhIUghJCUmSyYpJSoQLgkI
+	gAoIgARaRnVsbHNjcmVlbtItLlBRo1FSMV5OU011dGFibGVBcnJheVdOU0FycmF5EgAB
+	hqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwASQBPAFQAXwBmAGsA
+	bQBvAHEAcwB1AJAApQC5AMcA1ADrAPMA/wEKARIBGQErATQBNgE4AT0BPwFAAUIBQwFF
+	AUYBSAFKAU8BVAFdAWgBawF0AX0BmAGdAZ8BoQGiAaMBpQGmAagBrgHJAcsBzQHPAdAB
+	0QHTAdQB1gHYAd8B+gH8Af0B/gIAAgECAwIOAhMCFwImAi4CMwAAAAAAAAIBAAAAAAAA
+	AFUAAAAAAAAAAAAAAAAAAAJF
+	</data>
+	<key>useGlobalHotkey</key>
+	<true/>
+</dict>
+</plist>

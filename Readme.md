@@ -1,11 +1,25 @@
-Appa
-====
-Get your project off the ground.
+# Appa
+
+Get your next adventure off the ground.
+
+
+## Workstation setup
+
+See the current status of your workstation setup, without making any changes.
+
+    $ appa workstation
+
+Install any missing setup.
+
+    $ appa workstation install
+
+
+## Project setup
 
     $ cd my_project
 
 
-## Git
+### Git
 
 Use git to version your project source code (and other assets) and manage your coding workflow.
 
@@ -45,7 +59,7 @@ See also: https://help.github.com/articles/ignoring-files
 My favorite git tutorial: http://www-cs-students.stanford.edu/~blynn/gitmagic/
 
 
-## Rvm
+### Rvm
 
 Use RVM to manage Ruby and gems on a per project basis.
 
@@ -71,7 +85,7 @@ Create a gemset for this project
     $ rvm --rvmrc --create 1.9.2@appa  # for example
 
 
-## Bundler
+### Bundler
 
 Use Bundler to manage gems, gem versions and gem dependencies.
 
@@ -85,7 +99,7 @@ Create the Gemfile
     $ bundle init
 
 
-## Rake
+### Rake
 
 Use Rake to manage scripts related to your project.
 
@@ -103,7 +117,7 @@ run the test suite.  Another option is to list out available tasks, as shown bel
     end
 
 
-## PostgreSQL
+### PostgreSQL
 
 Use PostgreSQL for all of your database needs.
 
@@ -127,4 +141,4 @@ To allow local clients to connect to the database, change authentication for loc
     host    all         all         ::1/128               trust
 
 
-#### Yipyip!
+###### Yipyip!
