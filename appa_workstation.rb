@@ -57,6 +57,8 @@ def workstation(action)
     end
   end
 
+  with_application 'Numbers', operations
+
   if operations.count > 0
       operations.each do |operation|
         operation.call
