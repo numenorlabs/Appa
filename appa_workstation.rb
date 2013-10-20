@@ -1,3 +1,5 @@
+require 'find'
+
 def path_to_workstation_file(filename)
   File.join(File.dirname(__FILE__), "workstation/#{filename}")
 end
@@ -24,11 +26,7 @@ def workstation(action)
     end
   end
 
-  unless File.directory? '/Applications/Divvy.app'
-    operations << lambda {
-      puts 'Divvy application not found.'
-    }
-  end
+  with_application 'Divvy', operations
 
   unless File.file?(File.expand_path('~/Library/Preferences/com.mizage.divvy.plist'))
     if action == 'install'
@@ -42,9 +40,9 @@ def workstation(action)
     end
   end
 
-  # Dropbox
+  with_application 'Dropbox', operations
 
-  # Flux
+  with_application 'Flux', operations
 
   unless File.exists? '/Applications/Screen Sharing.app'
     if action == 'install'
@@ -65,5 +63,18 @@ def workstation(action)
       end
   else
     puts 'Your setup is up to date.'
+  end
+end
+
+def with_application(application_name, operations)
+  application_found = false
+  Find.find '/Applications/' do |path|
+    application_found = true if path =~ /#{application_name}\.app$/
+    Find.prune if path =~ /\.app$/
+  end
+  if !application_found
+    operations << lambda {
+      puts "#{application_name} application not found."
+    }
   end
 end
