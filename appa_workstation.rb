@@ -59,6 +59,19 @@ def workstation(action)
 
   with_application 'Numbers', operations
 
+  unless `git config core.editor`.start_with? 'emacs'
+    if action == 'install'
+      operations << lambda {
+        puts 'Setting git editor'
+        system_or_exit 'git config --global core.editor "emacs"'
+      }
+    else
+      operations << lambda {
+        puts 'git editor not set to emacs'
+      }
+    end
+  end
+
   if operations.count > 0
       operations.each do |operation|
         operation.call
