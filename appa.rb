@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'appa_workstation'
+require_relative 'appa_workstation.rb'
 
 command = ARGV.shift
 
