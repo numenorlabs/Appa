@@ -70,6 +70,10 @@ Is RVM installed?
 
 If not, see installation instructions at <http://beginrescueend.com>.
 
+To get the latest rvm (which may be necessary to install a new Ruby):
+
+    $ rvm get stable
+
 Check to see what Ruby versions have been installed and what versions are available.
 
     $ rvm list
