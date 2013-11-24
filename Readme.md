@@ -74,6 +74,10 @@ To get the latest rvm (which may be necessary to install a new Ruby):
 
     $ rvm get stable
 
+To covert an old .rvmrc to .ruby-version/.ruby-gemset:
+
+    $ rvm rvmrc to .ruby-version
+
 Check to see what Ruby versions have been installed and what versions are available.
 
     $ rvm list
